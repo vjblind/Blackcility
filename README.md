@@ -1,46 +1,51 @@
-# Hugo template for Netlify CMS with Netlify Identity
+# `Moralis Poll [web3-social-network-boilerplate]`
 
-This is a small business template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital).
+This Project is a fork of [Ethereum Boilerplate](https://github.com/ethereum-boilerplate/ethereum-boilerplate) and demostrates how you can build your own Web3 Ethereum Social Network. This project of course work on any EVM-compatible blockchain such as Polygon, Avalanche, Binance Smart Chain and other such chains.
 
-## Getting started
+![social](https://user-images.githubusercontent.com/78314301/142860643-f458fd69-ab8b-4408-82e3-d02e10ea590e.gif)
 
-Use our deploy button to get your own copy of the repository. 
+# ⭐️ `Star us`
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/one-click-hugo-cms&stack=cms)
+If this boilerplate helps you build Ethereum dapps faster - please star this project, every star makes us very happy!
 
-This will setup everything needed for running the CMS:
+# 🤝 `How to get help`
 
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Netlify CMS
+If you have any questions or need help running this project please don't hesitate to ask in [our forum](https://forum.moralis.io/t/ethereum-social-media-boilerplate/4655). We are monitoring it 24/7 and are here to help you get up to speed.
 
-Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite.
+# 🚀 Quick Start
 
-Now you're all set, and you can start editing content!
+📄 Clone or fork `web3-social-network-boilerplate`:
 
-## Local Development
-
-Clone this repository, and run `yarn` or `npm install` from the new folder to install all required dependencies.
-
-Then start the development server with `yarn start` or `npm start`.
-
-## Layouts
-
-The template is based on small, content-agnostic partials that can be mixed and matched. The pre-built pages showcase just a few of the possible combinations. Refer to the `site/layouts/partials` folder for all available partials.
-
-Use Hugo’s `dict` functionality to feed content into partials and avoid repeating yourself and creating discrepancies.
-
-## CSS
-
-The template uses a custom fork of Tachyons and PostCSS with cssnext and cssnano. To customize the template for your brand, refer to `src/css/imports/_variables.css` where most of the important global variables like colors and spacing are stored.
-
-## SVG
-
-All SVG icons stored in `site/static/img/icons` are automatically optimized with SVGO (gulp-svgmin) and concatenated into a single SVG sprite stored as a a partial called `svg.html`. Make sure you use consistent icons in terms of viewport and art direction for optimal results. Refer to an SVG via the `<use>` tag like so:
-
+```sh
+git clone https://github.com/ethereum-boilerplate/web3-social-network-boilerplate
 ```
-<svg width="16px" height="16px" class="db">
-  <use xlink:href="#SVG-ID"></use>
-</svg>
+
+💿 Install all dependencies:
+
+```sh
+cd web3-social-network-boilerplate
+yarn install
+```
+
+✏ Rename `.env.example` to `.env` in the main folder and provide your `appId` and `serverUrl` from Moralis ([How to start Moralis Server](https://docs.moralis.io/moralis-server/getting-started/create-a-moralis-server))
+Example:
+
+```jsx
+REACT_APP_MORALIS_APPLICATION_ID = xxxxxxxxxxxx
+REACT_APP_MORALIS_SERVER_URL = https://xxxxxx.grandmoralis.com:2053/server
+```
+
+📄 Set your Contract
+
+```sh
+- Deploy smart contracts from this folder https://github.com/ethereum-boilerplate/web3-social-network-boilerplate/tree/main/smart%20contracts
+- Add some categories through the addCategory function.
+- Set listeners in the Moralis Server to sync all your contracts events.
+- Add your contract address in MoralisDappProvider.js contract address as the default value of the state
+```
+
+🚴‍♂️ Run your App:
+
+```sh
+yarn start
 ```

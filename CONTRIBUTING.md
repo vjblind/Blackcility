@@ -1,49 +1,32 @@
-# CONTRIBUTING
+# Contributing to `ethereum-boilerplate`
 
-Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
+## Setting up the project for debugging and contributing
 
-## Setup
+### Setting up you local machine:
 
-```sh
-$ git clone https://github.com/netlify/victor-hugo
-$ cd victor-hugo
-$ npm install
-```
-
-## Building
+- [Fork](https://github.com/ethereum-boilerplate/ethereum-boilerplate) this project and clone the fork on your local machine:
 
 ```sh
-$ npm run build
+git clone https://github.com/ethereum-boilerplate/ethereum-boilerplate.git
+cd ethereum-boilerplate # go into the clone directory
+npm install # install all the node dependencies
 ```
 
-## Testing
+Make sure to have a ESlint and Prettier plugin installed to check for code-smells and auto-formatting.
 
-```sh
-$ npm run test
-```
+### Pull Requests
 
-```sh
-$ npm run test:watch
-```
+1. Fork the repo and create your branch from `main`.
+2. Make sure your code lints and is correctly formatted.
 
-## Running the server
+### Known Issues
 
-```sh
-$ npm run start
-```
+We use GitHub issues to track public bugs. We will keep a close eye on this and try to make it clear when we have an internal fix in progress. Before filing a new issue, try to make sure your problem doesn't already exist.
 
-## Pull Requests
+### Coding Style
 
-We actively welcome your pull requests.
-
-1. Fork the repo and create your branch from `master`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
+Please follow the [Coding Style](https://github.com/ethereum-boilerplate/ethereum-boilerplate/blob/main/CODING_STYLE.md).
 
 ## License
 
-By contributing to Victor-Hugo, you agree that your contributions will be licensed
-under its [MIT license](LICENSE).
+By contributing to the ethereum-boilerplate, you agree that your contributions will be licensed under its license.
